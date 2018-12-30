@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #333;
+	color: rgba(255,255,255,0.2);
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	position: relative;
+	background-color: rgba(255,255,255,0.1);
+	/* 
+	width: 400px;
+	height: 400px;
+	*/
+	box-shadow: 0 0 20px rgba(0,0,0,0.33);
+	border-top-right-radius: 10px; 
+	border-bottom-left-radius: 10px; 
+}
+
+.tile {
+	position: absolute;
+	width: 98px;
+	height: 98px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	border-top-right-radius: 10px; 
+	border-bottom-left-radius: 10px;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+
+.tile.c2 { background-color : #e8ddb5; color: rgba(0,0,0,0.5); }
+.tile.c4 { background-color : #b2c9ab; color: rgba(0,0,0,0.5); }
+.tile.c8 { background-color : #92b6b1; color: rgba(0,0,0,0.5); }
+.tile.c16 { background-color : #788aa3; color: rgba(255,255,255,0.5); }
+.tile.c32 { background-color : #666a86; color: rgba(255,255,255,0.5); }
+.tile.c64 { background-color : #9ac2c9; color: rgba(0,0,0,0.5); }
+.tile.c128 { background-color : #247ba0; color: rgba(255,255,255,0.5); }
+.tile.c256 { background-color : #70c1b3; color: rgba(0,0,0,0.5); }
+.tile.c512 { background-color : #b2dbbf; color: rgba(0,0,0,0.5); }
+.tile.c1024 { background-color : #f3ffbd; color: rgba(0,0,0,0.5); }
+.tile.c2048 { background-color : #ff1654; color: rgba(255,255,255,0.5); }
+
+.score {
+	padding: 10px;
+	margin: 20px;
+	background-color: rgba(0,0,0,0.2);
+	text-align: center;
+	border-top-right-radius: 10px; 
+	border-bottom-left-radius: 10px;
+	min-height: 70px;
+	min-width: 150px;
+}
+.score--label {
+	width: 100%;
+}
+.score--num {
+	width: 100px;
+	color: rgba(255,255,255,0.5);
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+}
+
+.btn_start {
+	background-color : #ff1654;
+	color: rgba(255,255,255,0.75);
+	margin: 20px;
+	text-align: center;
+	border-top-right-radius: 10px; 
+	border-bottom-left-radius: 10px; 
+	font-weight: bold;
+	min-height: 70px;
+	line-height: 70px;
+	min-width: 150px;
+	cursor: pointer;
+	transition: transform 0.5s, box-shadow 0.5s;
+}
+.btn_start:hover {
+	transform: translate(-5px,-5px);
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+	transition: transform 0.2s, box-shadow 0.2s;
+}
